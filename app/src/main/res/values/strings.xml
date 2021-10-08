@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">New App</string>
+    <string name="Shopping_cart">Welcome to your Online Shopping Cart Page</string>
+    <string name="submit">submit</string>
+    <string name="add_item_to_list">Add item to list</string>
+    <string name="cart">cart</string>
+</resources>

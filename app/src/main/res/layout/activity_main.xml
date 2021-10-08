@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="96dp">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+
+
+        <TextView
+            android:id="@+id/shoppingCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/Shopping_cart"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="250dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="50dp"
+            android:contentDescription="@string/cart"
+            app:layout_constraintStart_toStartOf="@id/shoppingCart"
+            app:layout_constraintTop_toBottomOf="@id/shoppingCart"
+            app:srcCompat="@drawable/img"
+            tools:layout_editor_absoluteX="93dp"
+            tools:layout_editor_absoluteY="136dp" />
+
+
+        <EditText
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:autofillHints="add"
+            android:hint="@string/add_item_to_list"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cart"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/submitBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            app:layout_constraintTop_toBottomOf="@id/add">
+
+        </Button>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
